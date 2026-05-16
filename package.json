@@ -1,0 +1,25 @@
+{
+  "name": "nebula-crafter",
+  "version": "0.1.0",
+  "description": "A Discord bot starter for the Nebula Crafter community.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy:commands": "node src/deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/deploy-commands.js && node --check src/config.js && node --check src/commands.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "nebula-crafter"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
